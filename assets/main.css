@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green: #BDFF91;
+    --orange: #FFDA6D;
+    --primary-text: #1C0B47;
+    --secondary-text: #261C6A;
+    --blue-dark: #5B70CE;
+    --blue-light: #9DCEED;
+    --secondary-background: #D2F5F7;
+    --primary-background: #EDFFFA;
+}
+
+body {
+    background-color: var(--primary-background);
+    font-family: "Fira Sans", serif;
+    color: var(--primary-text);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+section, header {
+    padding: 0.5em;
+    background-image: linear-gradient(#bee3ee, #D2F5F7);
+    box-shadow: 0 0.5em 1em rgba(38, 28, 106, 0.5);
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-radius: 0.4em;
+    border-bottom: 0.2em solid var(--blue-dark);
+    /*border-top: 0.1em solid var(--blue-dark);*/
+}
+
+header {
+    border-radius: 0 0 0.4em 0.4em;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div span h1 {
+    max-width: 50vw;
+}
+
+header div span h2 {
+    font-size: 0.9em;
+    max-width: 50vw;
+}
+
+header div i {
+    align-self: center;
+}
+
+section h3 {
+    text-align: center;
+    border-bottom: 0.15em solid var(--secondary-text);
+    padding-bottom: 0.2em;
+    margin-bottom: 0.5em;
+    max-width: fit-content;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    padding: 0.8em 0.3em;
+    background-color: var(--blue-light);
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.course-list li {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.3em;
+    padding: 0.2em;
+    background-color: var(--primary-background);
+    border-radius: 0.3em;
+    font-size: 0.85em;
+}
+
+.current-term span {
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.course-title {
+    font-weight: bold;
+    align-self: center;
+}
+
+.term-grade {
+    background-color: var(--secondary-background);
+    border-radius: 0.4em;
+    padding: 0.2em;
+}
+
+select {
+    background-color: var(--secondary-background);
+    border: none;
+    border-radius: 0.4em;
+}
+
+option {
+    background-color: var(--primary-background);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+button {
+    border: none;
+    border-radius: 0.3em;
+    background-color: var(--blue-light);
+    transition: 0.2s all;
+}
+
+.container button {
+    min-height: 4em;
+    font-weight: bold;
+    align-self: center;
+}
+
+.container button:nth-child(odd) {
+    min-height: 3em;
+}
+
+.requirements ul {
+    margin-bottom: 1em;
+}
+
+.requirements ul li {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 0.5em;
+}
+
+.requirements span {
+    display: flex;
+    justify-content: center;
+}
+
+.requirements span button {
+    min-height: 3em;
+    min-width: 10em;
+}
+
+button:hover {
+    color: var(--primary-background);
+    background-color: var(--blue-dark);
+}
+
+.plan span {
+    display: flex;
+    justify-content: center;
+}
+
+.plan span button {
+    font-weight: bold;
+}
